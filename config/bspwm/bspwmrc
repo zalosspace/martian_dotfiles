@@ -1,8 +1,8 @@
 #! /bin/sh
 
-# bash ~/change_to_dvorak.sh &
+# bash ~/change_to_dvorak.sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd -m -1 &
 
 ~/.config/polybar/launch.sh &
 picom &
